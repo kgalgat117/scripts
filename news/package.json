@@ -1,0 +1,16 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "scrapper for news.ycombinator.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "karan",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  }
+}
