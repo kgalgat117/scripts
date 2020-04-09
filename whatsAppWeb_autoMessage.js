@@ -26,4 +26,6 @@ function startMessages() {
         }
     }
 }
-startMessages();
+setTimeout(() => {
+    startMessages();
+}, 15000)
