@@ -12,9 +12,14 @@ cd ~/.ssh/
 touch config
 nano config
 #paste below content in above file
-IdentityFile ~/.ssh/id_rsa_personal
-IdentityFile ~/.ssh/id_rsa_innovito
-IdentitiesOnly yes
+HOST personal.github.com
+        HostName github.com
+        IdentityFile ~/.ssh/id_rsa_personal
+
+HOST innovito.github.com
+        HostName github.com
+        IdentityFile ~/.ssh/id_rsa_innovito
+
 #save file and exit
 
 ssh-add -D
