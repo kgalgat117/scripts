@@ -10,4 +10,5 @@ sudo systemctl status docker
 sudo usermod -aG docker ${USER}
 su - ${USER}
 id -nG
+sudo usermod -aG docker username
 docker ps
