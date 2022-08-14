@@ -27,7 +27,14 @@ setTimeout(() => {
         setTimeout(() => {
             connection.click();
             setTimeout(() => {
-                document.querySelectorAll('[aria-label="Send now"]')[0].click();
+                let tipButton = document.querySelectorAll('[aria-label="Got it"]')[0];
+                if (tipButton) {
+                    tipButton.click();
+                }
+                let confirmConnectionButton = document.querySelectorAll('[aria-label="Send now"]')[0];
+                if (confirmConnectionButton) {
+                    confirmConnectionButton.click();
+                }
             }, 200);
         }, start);
         start += 3200;
