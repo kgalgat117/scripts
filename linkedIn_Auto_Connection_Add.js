@@ -23,7 +23,7 @@ setTimeout(() => {
     console.log("total connections", connections.length);
 
     let start = 0;
-    let counter = 0;
+    let counter2 = 0;
     for (let connection of connections) {
         setTimeout(() => {
             connection.click();
@@ -33,9 +33,9 @@ setTimeout(() => {
                     tipButton.click();
                 }
                 let confirmConnectionButton = document.querySelectorAll('[aria-label="Send now"]')[0];
-                if (confirmConnectionButton && counter < 10) {
+                if (confirmConnectionButton && counter2 < 10) {
                     confirmConnectionButton.click();
-                    counter++;
+                    counter2++;
                 }
             }, 200);
         }, start);
