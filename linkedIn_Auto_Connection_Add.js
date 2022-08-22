@@ -37,9 +37,6 @@ setTimeout(() => {
                     confirmConnectionButton.click();
                     counter2++;
                 }
-                if (counter2 >= 10) {
-                    break;
-                }
             }, 200);
         }, start);
         start += 3200;
