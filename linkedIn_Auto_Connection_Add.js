@@ -24,7 +24,7 @@ setTimeout(() => {
 
     let start = 0;
     let counter2 = 0;
-    main: for (let connection of connections) {
+    for (let connection of connections) {
         setTimeout(() => {
             connection.click();
             setTimeout(() => {
@@ -38,7 +38,7 @@ setTimeout(() => {
                     counter2++;
                 }
                 if (counter2 >= 10) {
-                    break main;
+                    break;
                 }
             }, 200);
         }, start);
